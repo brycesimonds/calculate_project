@@ -13,5 +13,7 @@ RSpec.describe Day do
     expect(day.month).to eq("9")
     expect(day.day).to eq("1")
     expect(day.year).to eq("15")
+    expect(day.is_travel_day).to eq(nil)
+    expect(day.is_full_day).to eq(nil)
   end
 end
