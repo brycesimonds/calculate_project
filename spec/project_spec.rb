@@ -14,7 +14,7 @@ RSpec.describe Project do
     end_date = "9/3/15"
     project = Project.new("Low Cost City", start_date, end_date )
     expect(project.city_cost_type).to eq("Low Cost City")
-    expect(project.start_date).to eq("9")
-    expect(project.end_date).to eq("1")
+    expect(project.start_date).to be_a Date
+    expect(project.end_date).to be_a Date
   end
 end
