@@ -9,6 +9,6 @@ RSpec.describe ProjectSet do
     end_date = "9/3/15"
     project = Project.new("Low Cost City", start_date, end_date )
     project_set = ProjectSet.new(project)
-    expect(project_set).to be_a(ProjectSet)
+    expect(project_set.calculate_cost).to eq(165)
   end
 end

@@ -24,4 +24,8 @@ class Project
     date_range  = start_date..end_date
     (date_range).map(&:to_s)
   end
+
+  def calculate_cost
+    
+  end
 end

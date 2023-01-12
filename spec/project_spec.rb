@@ -17,4 +17,11 @@ RSpec.describe Project do
     expect(project.start_date).to be_a Date
     expect(project.end_date).to be_a Date
   end
+
+  it "can calculate its total cost" do 
+    start_date = "9/1/15"
+    end_date = "9/3/15"
+    project = Project.new("Low Cost City", start_date, end_date )
+    expect(project.calculate_cost).to eq(165)
+  end
 end
